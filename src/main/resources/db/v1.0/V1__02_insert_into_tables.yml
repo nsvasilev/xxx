@@ -52,13 +52,13 @@ databaseChangeLog:
                 value: 1
               - column:
                   name: NEWS_ID
-#                  value: '7p1etr2m-6a0l-8eev-1vla-9i8m7i1rov4h'
+                  value: '7p1etr2m-6a0l-8eev-1vla-9i8m7i1rov4h'
               - column:
                   name: IMAGE_ID
-#                  value: '3p3etr3m-3a0l-3eev-3vla-3i3m7i1rov4h'
+                  value: '3p3etr3m-3a0l-3eev-3vla-3i3m7i1rov4h'
               - column:
                   name: SIZE_IMAGE
-#                  value: "Маленькое"
+                  value: "Маленькое"
   - changeSet:
       id: insertImage
       author: Diana
