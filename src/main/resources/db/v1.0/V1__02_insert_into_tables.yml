@@ -1,78 +1,5 @@
 databaseChangeLog:
   - changeSet:
-      id: insertNews
-      author: Diana
-      changes:
-        - insert:
-            tableName: NEWS
-            columns:
-              - column:
-                  name: NEWS_ID
-                  value: '7p1etr2m-6a0l-8eev-1vla-9i8m7i1rov4h'
-              - column:
-                  name: TITLE
-                  value: "В городе Пинск торжественно открылся новый офис!"
-              - column:
-                  name: INTRO
-                  value: "По адресу Ленина 120 в Кировском районе г. Пинск открылся новый офис. Был организован фуршет, проведена презентация, и назначены руководителей."
-              - column:
-                  name: TEXT
-                  value: "Компания объявляет о новых выгодных условиях по кредитным продуктам!
-                  Мы рады сообщить, что компания обновила условия по своим кредитным продуктам,
-                 сделав их еще более привлекательными для клиентов.
-                  Изменения коснулись процентных ставок, сроков кредитования, а также других важных условий, 
-                  чтобы сделать кредитование еще более доступным и выгодным.
-                  Теперь клиенты могут получить кредит на еще более выгодных условиях,
-                что позволит им реализовать свои планы и цели с уверенностью в будущем.
-                Мы уверены, что новые условия по кредитованию станут отличным предложением для тех,
-                 кто ищет надежного финансового партнера.
-                  Подробную информацию о новых условиях по кредитам 
-                вы можете получить на нашем сайте или обратившись к нашим специалистам.
-                Мы всегда готовы помочь вам с выбором кредитного продукта, 
-                  который идеально соответствует вашим потребностям."
-              - column:
-                  name: STATUS_ID
-                  value: '1'
-              - column:
-                  name: N_DATE_CREATE
-                  value: "2024-01-03 16:00:00.000000"
-              - column:
-                  name: N_DATE_PUBLISHED
-                  value: "2024-01-05 16:00:00.000000"
-
-  - changeSet:
-      id: insertImageNews
-      author: Nikita
-      changes:
-        - insert:
-            tableName: IMAGE_NEWS
-            columns:
-              - column:
-                  name: IMAGE_NEWS_ID
-                value: 1
-              - column:
-                  name: NEWS_ID
-                  value: '7p1etr2m-6a0l-8eev-1vla-9i8m7i1rov4h'
-              - column:
-                  name: IMAGE_ID
-                  value: '3p3etr3m-3a0l-3eev-3vla-3i3m7i1rov4h'
-              - column:
-                  name: SIZE_IMAGE
-                  value: "Маленькое"
-  - changeSet:
-      id: insertImage
-      author: Diana
-      changes:
-        - insert:
-            tableName: IMAGE
-            columns:
-              - column:
-                  name: IMAGE_ID
-                  value: '3p3etr3m-3a0l-3eev-3vla-3i3m7i1rov4h'
-              - column:
-                  name: URL
-                  value: "/news/innovation/12345678/187.png"
-  - changeSet:
       id: insertCategory
       author: Diana
       changes:
@@ -81,7 +8,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: CATEGORY_ID
-                  value: '1'
+                  value: '2'
               - column:
                   name: NAME_CATEGORY
                   value: "Новости банка"
@@ -99,4 +26,68 @@ databaseChangeLog:
               - column:
                   name: NAME_STATUS
                   value: "Активен"
+
+  - changeSet:
+      id: insertNews
+      author: Diana
+      changes:
+        - insert:
+            tableName: NEWS
+            columns:
+              - column:
+                  name: NEWS_ID
+                  value: '450e8400-e29b-41d4-a716-446655440000'
+              - column:
+                  name: TITLE
+                  value: "В городе Пинск торжественно открылся новый офис!"
+              - column:
+                  name: INTRO
+                  value: "По адресу Ленина 120 в Кировском районе г. Пинск открылся новый офис. Был организован фуршет, проведена презентация, и назначены руководителей."
+              - column:
+                  name: TEXT
+                  value: "Компания объявляет о новых выгодных условиях по кредитным продуктам!..."
+              - column:
+                  name: CATEGORY_ID
+                  value: '2'
+              - column:
+                  name: STATUS_ID
+                  value: '1'
+              - column:
+                  name: N_DATE_CREATE
+                  value: "2024-01-03 16:00:00.000000"
+              - column:
+                  name: N_DATE_PUBLISHED
+                  value: "2024-01-05 16:00:00.000000"
+
+  - changeSet:
+      id: insertImage
+      author: Diana
+      changes:
+        - insert:
+            tableName: IMAGE
+            columns:
+              - column:
+                  name: IMAGE_ID
+                  value: '450e8400-e29b-41d4-a716-446655440000'
+              - column:
+                  name: URL
+                  value: "/news/innovation/12345678/187.png"
+
+  - changeSet:
+      id: insertImageNews
+      author: Nikita
+      changes:
+        - insert:
+            tableName: IMAGE_NEWS
+            columns:
+              - column:
+                  name: NEWS_ID
+                  value: '450e8400-e29b-41d4-a716-446655440000'
+              - column:
+                  name: IMAGE_ID
+                  value: '450e8400-e29b-41d4-a716-446655440000'
+              - column:
+                  name: SIZE_IMAGE
+                  value: "Маленькое"
+
 

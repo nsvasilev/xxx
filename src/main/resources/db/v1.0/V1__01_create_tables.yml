@@ -17,8 +17,6 @@ databaseChangeLog:
                   computed: true
                   constraints:
                     primaryKey: true
-                    nullable: false
-                    unique: true
               - column:
                   name: TITLE
                   type: VARCHAR(150)
@@ -66,7 +64,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: IMAGE_NEWS_ID
-                  type: INT
+                  type: SERIAL
                   constraints:
                     primaryKey: true
                     nullable: false
@@ -77,8 +75,6 @@ databaseChangeLog:
                   name: IMAGE_ID
                   type: UUID
                   computed: true
-                  constraints:
-
               - column:
                   name: SIZE_IMAGE
                   type: VARCHAR(15)
@@ -144,8 +140,6 @@ databaseChangeLog:
                   type: VARCHAR(10)
                   constraints:
                     nullable: false
-
-
   - changeSet:
       id: news_fk
       author: diana
