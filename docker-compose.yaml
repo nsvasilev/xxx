@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: news_service
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5435:5432"
+
+  redis-stack:
+    image: redis/redis-stack:latest
+    container_name: redis-stack-news-service
+    ports:
+     - "6381:6379"
+     - "8003:8001" # fixme тут поправить нужно или нет???
