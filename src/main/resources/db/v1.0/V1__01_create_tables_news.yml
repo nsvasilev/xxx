@@ -43,7 +43,7 @@ databaseChangeLog:
                     unique: true
               - column:
                   name: STATUS_ID
-                  type: INT
+                  type: UUID
                   constraints:
                     nullable: false
                     unique: true
@@ -71,9 +71,13 @@ databaseChangeLog:
               - column:
                   name: NEWS_ID
                   type: UUID
+                  constraints:
+                    nullable: false
               - column:
                   name: IMAGE_ID
                   type: UUID
+                  constraints:
+                    nullable: false
                   computed: true
               - column:
                   name: SIZE_IMAGE
@@ -89,7 +93,6 @@ databaseChangeLog:
                   name: IMAGE_ID
                   type: UUID
                   computed: true
-                  #  defaultValue: gen_random_uuid()
                   constraints:
                     nullable: false
                     primaryKey: true
@@ -130,11 +133,9 @@ databaseChangeLog:
             columns:
               - column:
                   name: STATUS_ID
-                  type: INT
+                  type: UUID
                   constraints:
                     primaryKey: true
-                    nullable: false
-                    unique: true
               - column:
                   name: NAME_STATUS
                   type: VARCHAR(10)

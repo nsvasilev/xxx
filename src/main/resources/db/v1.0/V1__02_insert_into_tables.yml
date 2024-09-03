@@ -22,7 +22,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: STATUS_ID
-                  value: '1'
+                  value: '123e4500-e29b-41d4-a716-446655440000'
               - column:
                   name: NAME_STATUS
                   value: "Активен"
@@ -51,7 +51,7 @@ databaseChangeLog:
                   value: '2'
               - column:
                   name: STATUS_ID
-                  value: '1'
+                  value: '123e4500-e29b-41d4-a716-446655440000'
               - column:
                   name: N_DATE_CREATE
                   value: "2024-01-03 16:00:00.000000"
